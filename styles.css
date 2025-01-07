@@ -18,6 +18,10 @@ body{
    
 }
 
+
+
+
+
 #header{
 display: flex;
 flex-direction: column;
@@ -96,8 +100,149 @@ a{
     transform: translate(-50%,-50%);
     z-index: 1;
   }
-  
 
+  #bcgItems p span {
+    color:rgb(66, 67, 67)
+  }
+
+
+
+
+
+
+  main{
+    display: flex;
+    margin:20px 0px;
+  }
+
+
+  #totals{
+    padding:30px;
+    display: flex;
+    flex-direction: column;
+    background-color:  #FAF3EA;
+    gap:40px;
+    text-align: center;
+   
+  }
+
+  #priceGold{
+    color:#B88E2F
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    gap:40px;
+  }
+
+ #totals button{
+            padding:15px 0px;
+            border-radius: 5px;
+            background-color:transparent;
+            border:1px solid black;
+            font-size: 16px;
+  }
+
+  #description{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    margin-left:20px;
+    margin-right:20px;
+    gap:40px;
+
+  }
+
+  #listHeading{
+    background-color: #FAF3EA;
+    padding:10px;
+    display: flex;
+    justify-content: space-between;
+    gap:30px;
+    text-align: center;
+   
+  }
+ 
+  #listItems{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
+    gap:40px;
+    align-items: center;
+
+  }
+
+  #productIMG img{
+    height:100px;
+    border-radius: 10px;
+  }
+
+  #productName, #price{
+    color:#9F9F9F;
+  }
+
+  #listItems span{
+    border:1px solid #9F9F9F;
+    padding:2px 11px;
+    border-radius: 4px;
+    height:30px;
+    width:30px;
+    font-size: large;
+    text-align: center;
+  }
+
+  #quantity{
+    display: flex;
+    gap:15px;
+  }
+
+  #inc, #dec{
+
+    border:1px solid #9F9F9F;
+    border-radius: 4px;
+    height:30px;
+    width:30px;
+    text-align: center;
+    background-color: transparent;
+    font-size: large;
+    cursor: pointer;
+    
+  }
+
+
+
+
+  footer{
+    display: flex;
+    justify-content: space-between;
+    padding:60px 20px;
+    background-color: #FAF3EA;
+   
+  }
+
+  footer img{
+    height:40px;
+    margin-right:5px;
+  }
+
+  footer p{
+    font-weight: bold;
+
+  }
+
+  footer span{
+    font-weight: 400;
+    color:#898989
+  }
+  
+  #trophy, #warranty, #shipping, #support {
+    display: flex;
+  }
+
+  
 
 
 

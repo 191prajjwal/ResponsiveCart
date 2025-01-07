@@ -37,7 +37,7 @@
         <div id="bcgItems">
             <img src="./images/logo.png" alt="logo">
             <h1>Cart</h1>
-            <p><span>Home > </span> Cart</p>
+            <p>Home > <span> Cart </span></p>
         </div>
       </div>
 
@@ -45,9 +45,94 @@
 
 
 <main>
-    <div id="description"></div>
-    <div id="totals"></div>
+    <div id="description">
+
+
+        <ul id="listHeading">
+            <li></li>
+            <li>Product</li>
+            <li>Price</li>
+            <li>Quantity</li>
+            <li>Subtotal</li>
+            <li></li>
+        </ul>
+
+
+
+        <ul id="listItems">
+            <li id="productIMG">
+                <img src="" alt="sofa">
+            </li>
+            <li id="productName"></li>
+            <li id="price">Rs. 250,000.00</li>
+            <li id="quantity">
+                <button id="inc">+</button>
+                <span id="quantity">1</span>
+                <button id="dec">-</button>
+            </li>
+            <li id="subTotal">Rs. 250,000.00</li>
+            <li id="delete">
+                <img src="./images/trash.png" alt="">
+            </li>
+        </ul>
+       
+    </div>
+    <div id="totals">
+        <h2 id="totalHeading">
+            Cart Totals
+        </h2>
+
+        <div>
+            <ul>
+                <li>Subtotal</li>
+                <li>Rs. 250,000.00</li>
+            </ul>
+            <ul>
+                <li>Total</li>
+                <li id="priceGold">Rs. 250,000.00</li>
+            </ul>
+
+        </div>
+        <button>Check Out</button>
+    </div>
 </main>
+
+<footer>
+
+ <div id="trophy">
+    <img src="./images/trophy.png" alt="trophy">
+    <p> High Quality <br>
+    <span>crafted from top materials</span></p>
+ </div>
+
+ <div id="warranty">
+
+    <img src="./images/verified.png" alt="warranty">
+    <p>Warranty Protection <br> 
+      <span>Over 2 years</span>  
+    </p>
+    
+ </div>
+
+ <div id="shipping">
+
+    <img src="./images/hand.png" alt="shipping">
+    <p>Free Shipping <br> 
+       <span>Order over 150 $</span> 
+    </p>
+    
+ </div>
+
+
+ <div id="support">
+
+    <img src="./images/customer.png" alt="support">
+    <p>Free 24 / 7 Support <br> 
+      <span>Dedicated support</span> 
+    </p>
+    
+ </div>
+</footer>
 
    </div> 
 </body>
