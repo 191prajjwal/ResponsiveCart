@@ -3,138 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A functional and responsive cart page using HTML, CSS, and JavaScript.">
     <link rel="stylesheet" href="styles.css">
-    <title>CART</title>
+    <title>Cart</title>
 </head>
 <body>
-   <div id="container">
+    <div id="container">
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="./images/logo.png" alt="logo">
+                    <h2>Marmeto</h2>
+                </div>
 
-    <header id="header">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
 
-      <div id="navbar">
-        <div id ="logo">
-            <img src="./images/logo.png" alt="LOGO">
-            <h2>Marmeto</h2>
-        </div> 
-    
-           <nav id="navLinks">
-            <a href="#">Home</a>
-            <a href="#">Shop</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-           </nav>
-    
-           <div id="cartIcons">
-            <img src="./images/search.png" alt="search">
-            <img src="./images/wishlist.png" alt="wishlist">
-            <img src="./images/cart.png" alt="cart">
-           </div>
-      </div>
+                <div class="mobile-menu">
+                    <div class="mobile-menu-header">
+                        <div class="logo">
+                            <img src="./images/logo.png" alt="logo">
+                            <h2>Marmeto</h2>
+                        </div>
+                        <button class="close-menu">×</button>
+                    </div>
+                    <div class="mobile-menu-content">
+                        <a href="#">Home</a>
+                        <a href="#">Shop</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
 
-      <div id="hero">
-        
-        <div id="bcgItems">
-            <img src="./images/logo.png" alt="logo">
-            <h1>Cart</h1>
-            <p>Home > <span> Cart </span></p>
-        </div>
-      </div>
+                <div class="nav-links">
+                    <a href="#">Home</a>
+                    <a href="#">Shop</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="nav-icons">
+                    <img src="./images/search.png" alt="search">
+                    <img src="./images/wishlist.png" alt="wishlist">
+                    <img src="./images/cart.png" alt="cart">
+                </div>
+            </nav>
+            <div class="hero">
+                <div class="hero-content">
+                    <img src="./images/logo.png" alt="logo">
+                    <h1>Cart</h1>
+                    <p>Home > <span>Cart</span></p>
+                </div>
+            </div>
+        </header>
 
-    </header>
+        <main>
+            <div class="cart-section">
+                <div class="cart-headers">
+                    <span class="product-col">Product</span>
+                    <span>Price</span>
+                    <span>Quantity</span>
+                    <span>Subtotal</span>
+                </div>
 
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <div class="product-info">
+                            <img src="" alt="product" class="product-image">
+                            <div class="product-details">
+                                <span class="product-name"></span>
+                              
+                                <div class="mobile-price"></div>
+                            </div>
+                        </div>
+                        <div class="price desktop-only"></div>
+                        <div class="quantity-controls">
+                            <button class="qty-btn minus">-</button>
+                            <span class="qty-display">1</span>
+                            <button class="qty-btn plus">+</button>
+                        </div>
+                        <div class="subtotal"></div>
+                        <button class="delete-btn">
+                            <img src="./images/trash.png" alt="delete">
+                        </button>
+                    </div>
+                </div>
+            </div>
 
-<main>
-    <div id="description">
+            <aside class="cart-totals">
+                <h2>Cart Totals</h2>
+                <div class="total-rows">
+                    <div class="total-row">
+                        <span>Subtotal</span>
+                        <span class="subtotal-amount"></span>
+                    </div>
+                    <div class="total-row">
+                        <span>Total</span>
+                        <span class="total-amount"></span>
+                    </div>
+                </div>
+                <button class="checkout-btn">Check Out</button>
+            </aside>
+        </main>
 
-
-        <ul id="listHeading">
-            <li></li>
-            <li>Product</li>
-            <li>Price</li>
-            <li>Quantity</li>
-            <li>Subtotal</li>
-            <li></li>
-        </ul>
-
-
-
-        <ul id="listItems">
-            <li id="productIMG">
-                <img src="" alt="sofa">
-            </li>
-            <li id="productName"></li>
-            <li id="price">Rs. 250,000.00</li>
-            <li id="quantity">
-                <button id="inc">+</button>
-                <span id="quantity">1</span>
-                <button id="dec">-</button>
-            </li>
-            <li id="subTotal">Rs. 250,000.00</li>
-            <li id="delete">
-                <img src="./images/trash.png" alt="">
-            </li>
-        </ul>
-       
+        <footer>
+            <div class="footer-item">
+                <img src="./images/trophy.png" alt="quality">
+                <div>
+                    <h3>High Quality</h3>
+                    <p>crafted from top materials</p>
+                </div>
+            </div>
+            <div class="footer-item">
+                <img src="./images/verified.png" alt="warranty">
+                <div>
+                    <h3>Warranty Protection</h3>
+                    <p>Over 2 years</p>
+                </div>
+            </div>
+            <div class="footer-item">
+                <img src="./images/hand.png" alt="shipping">
+                <div>
+                    <h3>Free Shipping</h3>
+                    <p>Order over 150 $</p>
+                </div>
+            </div>
+            <div class="footer-item">
+                <img src="./images/customer.png" alt="support">
+                <div>
+                    <h3>24 / 7 Support</h3>
+                    <p>Dedicated support</p>
+                </div>
+            </div>
+        </footer>
     </div>
-    <div id="totals">
-        <h2 id="totalHeading">
-            Cart Totals
-        </h2>
-
-        <div>
-            <ul>
-                <li>Subtotal</li>
-                <li>Rs. 250,000.00</li>
-            </ul>
-            <ul>
-                <li>Total</li>
-                <li id="priceGold">Rs. 250,000.00</li>
-            </ul>
-
-        </div>
-        <button>Check Out</button>
-    </div>
-</main>
-
-<footer>
-
- <div id="trophy">
-    <img src="./images/trophy.png" alt="trophy">
-    <p> High Quality <br>
-    <span>crafted from top materials</span></p>
- </div>
-
- <div id="warranty">
-
-    <img src="./images/verified.png" alt="warranty">
-    <p>Warranty Protection <br> 
-      <span>Over 2 years</span>  
-    </p>
-    
- </div>
-
- <div id="shipping">
-
-    <img src="./images/hand.png" alt="shipping">
-    <p>Free Shipping <br> 
-       <span>Order over 150 $</span> 
-    </p>
-    
- </div>
-
-
- <div id="support">
-
-    <img src="./images/customer.png" alt="support">
-    <p>Free 24 / 7 Support <br> 
-      <span>Dedicated support</span> 
-    </p>
-    
- </div>
-</footer>
-
-   </div> 
 </body>
-<script src="./script.js"></script>
+<script src="script.js"></script>
 </html>
